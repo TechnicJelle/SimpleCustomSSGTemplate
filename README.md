@@ -32,7 +32,7 @@ Contains the HTML templates that will be used to generate the static site from.
 5. Go to the `Pages` section in the side bar on the left
 6. Underneath **Build and deployment**, click the `Source` dropdown, and choose `GitHub Actions`
 7. Now go to the `Actions` tab on the top, and then go to the `Build` section in the side bar on the left
-8. Click the `Run workflow` dropdown on the right, verify that it says "branch: main", and then click the green `Run workflow` button
+8. Click the `Run workflow` dropdown on the right, verify that it says "`Branch: main`", and then click the green `Run workflow` button
 9. After a few seconds, a new entry called "Build" should show up. Click that
 10. After another few seconds, the yellow circle should become a green checkmark
 11. The link to your website should show up now!
