@@ -2,6 +2,9 @@ from shutil import copytree
 
 import markdown
 
+# == Copy static files to the build directory ==
+copytree("static/", "build/", dirs_exist_ok=True)
+
 # == Load the template and content ==
 template: str
 content: str
@@ -21,6 +24,3 @@ output: str = template.replace("{{content}}", html)
 # == Write the output to the build directory ==
 with open("build/index.html", "w") as file:
 	file.write(output)
-
-# == Copy static files to the build directory ==
-copytree("static/", "build/", dirs_exist_ok=True)
